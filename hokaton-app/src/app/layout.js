@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -12,7 +13,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="./assets/icons/main_icon.ico" />
       </head>
       <body>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
