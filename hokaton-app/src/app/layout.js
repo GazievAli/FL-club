@@ -16,8 +16,6 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header header={components.header} />
-        
-        
       </body>
     </html>
   );
