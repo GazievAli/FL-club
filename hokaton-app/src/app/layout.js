@@ -1,5 +1,6 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { components } from "./server/data/data";
+import Header from "./components/UI/Header/Header";
+import Footer from "./components/UI/Footer/Footer";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -14,9 +15,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="./assets/icons/main_icon.ico" />
       </head>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <Header header={components.header} />
+        
+        
       </body>
     </html>
   );
