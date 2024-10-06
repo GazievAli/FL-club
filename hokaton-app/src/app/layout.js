@@ -1,6 +1,6 @@
 import { components } from "./server/data/data";
-import Header from "./components/UI/Header/Header";
-import Footer from "./components/UI/Footer/Footer";
+import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header header={components.header} />
+        {children}
       </body>
     </html>
   );

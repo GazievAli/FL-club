@@ -1,6 +1,13 @@
+"use client";
+import { useState } from "react"
 import "./Header.css"
 
 const Header = ({ header }) => {
+  const [activeIndex, setActiveIndex] = useState(null)
+  const handleItemClick = (index) => {
+    setActiveIndex(index)
+  }
+
   return ( 
     <header className="Header">
       <div className="container">
@@ -8,11 +15,16 @@ const Header = ({ header }) => {
           {
             header.navbar.map((el, index) => {
               return (
-                <li key={ index }>{ el }</li>
+                <li 
+                  key={ index } 
+                  onClick={ () => handleItemClick(index) } 
+                  className={ activeIndex === index ? 'active' : '' }
+                >
+                  { el }
+                </li>
               )
             })
           }
-          <li className="active">test</li>
         </ul>
         <div className="input_field">
           <input />
