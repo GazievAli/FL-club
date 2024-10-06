@@ -1,0 +1,28 @@
+section.main {
+    height: 500px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.container_translation {
+    background: #ccc;
+    margin-right: 5px;
+}
+
+.comments {
+    overflow-y: scroll;
+}
+
+p.post_p {
+    padding: 5px;
+    background: #ccc;
+}
