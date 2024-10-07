@@ -1,16 +1,18 @@
 import React from 'react';
 import "./Matches.css"
+import Card from "@/app/components/Matches/MatchesCard/Card";
 
-function Matches() {
+function Matches({ body }) {
     return (
         <section className="matches">
             <div className="container">
-                <div className="cart">
-                    1
-                </div>
-                <div className="cart">
-                    2
-                </div>
+                {
+                    body.map((el, index) => {
+                        return (
+                            <Card key={index}>{ el.date }</Card>
+                        )
+                    })
+                }
             </div>
         </section>
     );

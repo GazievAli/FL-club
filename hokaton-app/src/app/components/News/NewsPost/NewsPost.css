@@ -1,8 +1,13 @@
+.post {
+    min-width: 500px;
+    min-height: 100px;
+}
+
 h1.header {
     text-align: center;
     color: #ED1639;
 }
 
-.comments .post_h1 {
-
+p.post_p  {
+    padding: 20px !important;
 }

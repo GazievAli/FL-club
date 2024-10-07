@@ -17,8 +17,8 @@ const Header = ({ header }) => {
               return (
                 <li 
                   key={ index } 
-                  onClick={ () => handleItemClick(index) } 
-                  className={ activeIndex === index ? 'active' : '' }
+                  onClick={ () => handleItemClick(index) }
+                  className={activeIndex === index ? 'active' : '' }
                 >
                   { el }
                 </li>

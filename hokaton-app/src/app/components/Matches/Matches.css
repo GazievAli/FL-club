@@ -5,11 +5,5 @@ section.matches {
 
 section.matches > .container {
     display: flex;
-}
-
-section.matches > .container .cart {
-    height: 100%;
-    width: 200px;
-    margin-right: 10px;
-    background: #ccc;
+    overflow-x: scroll;
 }

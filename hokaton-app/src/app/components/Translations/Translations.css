@@ -13,6 +13,10 @@ section.main {
     grid-template-rows: 1fr;
 }
 
+.container.big {
+    grid-template-columns: 1fr;
+}
+
 .container_translation {
     background: #ccc;
     margin-right: 5px;
@@ -20,6 +24,11 @@ section.main {
 
 .comments {
     overflow-y: scroll;
+}
+
+.container_post {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p.post_p {
