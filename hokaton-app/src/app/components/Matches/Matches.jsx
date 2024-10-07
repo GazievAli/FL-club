@@ -9,7 +9,15 @@ function Matches({ body }) {
                 {
                     body.map((el, index) => {
                         return (
-                            <Card key={index}>{ el.date }</Card>
+                            <Card
+                                key={index}
+                                commandA={el.commandA}
+                                commandB={el.commandB}
+                                scoreA={el.scoreA}
+                                scoreB={el.scoreB}
+                            >
+                                { el.text }
+                            </Card>
                         )
                     })
                 }

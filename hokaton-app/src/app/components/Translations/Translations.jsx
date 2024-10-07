@@ -23,8 +23,7 @@ function Translations({ body, isTranslation }) {
                                             key={index}
                                             isBig={isTranslation}
                                             post_content={el.content}
-                                            post_title={el.title}
-                                        />
+                                            post_title={el.title}/>
                                     )
                                 })
                             : <h1>Новостей нет!</h1>

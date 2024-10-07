@@ -22,6 +22,17 @@ section.main {
     margin-right: 5px;
 }
 
+h1.header {
+    color: #111;
+    font-size: 1.2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+h1.header:hover {
+    color: #121212;
+}
+
 .comments {
     overflow-y: scroll;
 }
